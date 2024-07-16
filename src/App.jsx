@@ -40,20 +40,20 @@ function App() {
 
   return (
     <>
-      <div className="bg-gray-700 max-w-lg  p-2 my-12  mx-auto rounded-lg">
+      <div className="bg-gray-700 max-w-lg  p-2 my-20  mx-auto rounded-lg">
         <h1 className="text-sky-400  mb-2 text-xl  font-bold">
           Password Generator
         </h1>
-        <div className="d-flex flex-wrap">
+        <div className="d-flex flex-wrap my-1">
           <input
             type="text"
             value={password}
-            className="rounded-lg w-96 p-2"
+            className="rounded-lg min-w-72 sm:w-96 p-2"
             placeholder="password"
             ref={passwordRef}
           ></input>
           <button
-            className="bg-sky-400 text-white p-2 rounded-lg w-24 ms-3 hover:bg-sky-600"
+            className="bg-sky-400 text-white p-2 my-1 rounded-lg w-24 sm:ms-3 hover:bg-sky-600"
             onClick={() => copyPasswordToClipBoard(password)}
           >
             copy
